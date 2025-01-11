@@ -74,11 +74,11 @@ yarn start
 
 ## Live Website
 
-Check out the live version of this project: [Insert your live website link here]
+Check out the live version of this project: [https://siddharth9304.github.io/Delhi-Metro-Route-Finder]
 
 ## GitHub Repository
 
-You can find the repository for this project on GitHub: [Insert your GitHub repository link here]
+You can find the repository for this project on GitHub: [(https://github.com/Siddharth9304/Delhi-Metro-Route-Finder)]
 
 ## Special Thanks
 
