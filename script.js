@@ -202,8 +202,8 @@ allStations.forEach((station)=>{
     selectTo.appendChild(optionTo);
 })
 // setting default value for from and to
-document.getElementById("from").value = "Shastri Park";
-document.getElementById("to").value = "Karol Bagh";
+document.getElementById("from").value = "Millenium City Centre Gurugram";
+document.getElementById("to").value = "Samaypur Badli";
 
 // To store color for each station
 const stationColors = new Map();
@@ -380,6 +380,8 @@ document.getElementById("routeForm").addEventListener('submit',(event)=>{
             const station = document.createElement("div");
             if(route[i][1]==="Violet")
                 station.style.color = "rgba(148, 18, 236, 1)";
+            else if(route[i][1]==="Red")
+                station.style.color = "rgb(212, 0, 0)"
             else
                 station.style.color = route[i][1];
             station.innerHTML = `${route[i][0]}`;
