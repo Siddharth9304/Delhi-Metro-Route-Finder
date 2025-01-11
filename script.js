@@ -324,7 +324,6 @@ function findRouteBFS(graph, start, destination) {
     return path;
 }
 
-
 // Create Map and add stations
 function createMap() {
     const metroGraph = new Map();
@@ -399,13 +398,31 @@ document.getElementById("routeForm").addEventListener('submit',(event)=>{
         }
     }
     result.appendChild(document.createElement("br"));
+
+    // total number of stations along the path
     const noStations = document.createElement("div");
     noStations.innerHTML=`Total Stations: ${totalStations}`;
     result.appendChild(noStations);
+
+    // total number of interchanges are needed along the path
     const noInterchanges = document.createElement("div");
     noInterchanges.innerHTML=`Total Interchanges: ${totalInterchanges}`;
     result.appendChild(noInterchanges);
 
-    // document.getElementById("routeResult").innerHTML = route;
+    // average time required to complete the journey
+    let timeTaken = Math.ceil(2.5*(totalStations-1) + totalInterchanges*7);
+    timeTaken = timeToString(timeTaken);
+    const averageTime = document.createElement("div");
+    averageTime.innerHTML = `Average Travel Time: ${timeTaken}`;
+    result.appendChild(averageTime);
 })
+
+function timeToString(time){
+    const hour = Math.floor(time/60);
+    const min = time%60;
+    if(hour===0)
+        return `${min} minutes`;
+    else
+        return `${hour} hour ${min} minutes`;
+}
 
