@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Route Finder</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>Delhi Metro Route Finder</h1>
+    
+    <!-- Form for input -->
+    <form id="routeForm">
+      <div class="form-group">
+        <label for="from">From:</label>
+        <select name="from" id="from">
+        </select>
+      </div>
+      
+      <div class="form-group">
+        <label for="to">To:</label>
+        <select name="to" id="to">
+        </select>
+      </div>
+      
+      <button type="submit">Find Route</button>
+    </form>
+    
+    <div id="routeResult" class="result">
+      <!-- The result will appear here after submitting the form -->
+    </div>
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+</html>
