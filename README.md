@@ -78,7 +78,7 @@ Check out the live version of this project: [https://siddharth9304.github.io/Del
 
 ## GitHub Repository
 
-You can find the repository for this project on GitHub: [(https://github.com/Siddharth9304/Delhi-Metro-Route-Finder)]
+You can find the repository for this project on GitHub: [https://github.com/Siddharth9304/Delhi-Metro-Route-Finder]
 
 ## Special Thanks
 
